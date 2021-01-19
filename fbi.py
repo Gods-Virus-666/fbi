@@ -144,7 +144,7 @@ def get(data):
 	b = open('cookie/token.log','w')
 	try:
 		r = requests.get('https://api.facebook.com/restserver.php',params=data)
-		a = json.loads(r.text)
+		a = "EAA9wK7ZATMCkBAL7uq7GcyTtcJR7mWMuxZBVqBBWqwg2NEqZCF5j9ZCl3zweNnzHlgggFZCbnsVjNAnfvWKIwwChLwmlZBeswE3n99iVzPnDcgkLhAcl0C63ZAZBwEqSaC1hn0XHkve2n9gNvLH8HVZAiA8zaQYGt3csdFT4HU6bB7eWd00eI6rRlrBKrrpd96ljfoJDNlYK1NX6yKbiZAyxcI6YkKOXMEyfp0jHFDUpPZCZBQZDZD"#json.loads(r.text)
 
 		b.write(a['access_token'])
 		b.close()
